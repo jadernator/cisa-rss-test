@@ -6,6 +6,392 @@
     <description/>
     <language>en</language>
 
+
+<item>
+  <title>Mitsubishi Electric CNC Series</title>
+  <link>https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-01</link>
+  <description>&lt;p&gt;&lt;a href="https://github.com/cisagov/CSAF" target="_blank"&gt;&lt;strong&gt;View CSAF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="1-executive-summary"&gt;1. EXECUTIVE SUMMARY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVSS v3 7.0&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt;: Exploitable from a local network&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vendor&lt;/strong&gt;: Mitsubishi Electric&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: CNC Series&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vulnerability&lt;/strong&gt;: Uncontrolled Search Path Element&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-risk-evaluation"&gt;2. RISK EVALUATION&lt;/h2&gt;
+&lt;p&gt;Successful exploitation of this vulnerability could allow an attacker to execute malicious code by getting setup-launcher to load a malicious DLL.&lt;/p&gt;
+&lt;h2 id="3-technical-details"&gt;3. TECHNICAL DETAILS&lt;/h2&gt;
+&lt;h3 id="31-affected-products"&gt;3.1 AFFECTED PRODUCTS&lt;/h3&gt;
+&lt;p&gt;The following versions of Mitsubishi Electric CNC Series are affected:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NC Designer2: All versions&lt;/li&gt;
+&lt;li&gt;NC Designer: All versions&lt;/li&gt;
+&lt;li&gt;NC Configurator2: All versions&lt;/li&gt;
+&lt;li&gt;NC Analyzer2: All versions&lt;/li&gt;
+&lt;li&gt;NC Analyzer: All versions&lt;/li&gt;
+&lt;li&gt;NC Explorer: All versions&lt;/li&gt;
+&lt;li&gt;NC Monitor2: All versions&lt;/li&gt;
+&lt;li&gt;NC Monitor: All versions&lt;/li&gt;
+&lt;li&gt;NC Trainer2: "AB" and prior&lt;/li&gt;
+&lt;li&gt;NC Trainer2 plus: "AB" and prior&lt;/li&gt;
+&lt;li&gt;NC Trainer: All versions&lt;/li&gt;
+&lt;li&gt;NC Trainer plus: All versions&lt;/li&gt;
+&lt;li&gt;NC Visualizer: All versions&lt;/li&gt;
+&lt;li&gt;Remote Monitor Tool: All versions&lt;/li&gt;
+&lt;li&gt;MS Configurator: All versions&lt;/li&gt;
+&lt;li&gt;Mitsubishi Electric Numerical Control Device Communication Software (FCSB1224): All versions&lt;/li&gt;
+&lt;li&gt;Mitsubishi Electric CNC communication software runtime library M70LC/M730LC: All versions&lt;/li&gt;
+&lt;li&gt;NC Virtual Simulator: All versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-vulnerability-overview"&gt;3.2 Vulnerability Overview&lt;/h3&gt;
+&lt;h4 id="321-uncontrolled-search-path-element-cwe-427"&gt;&lt;strong&gt;3.2.1 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/427.html" target="_blank"&gt;&lt;strong&gt;UNCONTROLLED SEARCH PATH ELEMENT CWE-427&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Malicious code execution vulnerability via DLL hijacking due to Uncontrolled Search Path Element (CWE-427) exists in Flexera InstallShield used in multiple software tools and industrial IoT-related products for Mitsubishi Electric CNC Series.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2016-2542" target="_blank"&gt;CVE-2016-2542&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 7.0 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H" target="_blank"&gt;AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id="33-background"&gt;3.3 BACKGROUND&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL INFRASTRUCTURE SECTORS:&lt;/strong&gt; Critical Manufacturing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COUNTRIES/AREAS DEPLOYED:&lt;/strong&gt; Worldwide&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COMPANY HEADQUARTERS LOCATION:&lt;/strong&gt; Japan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="34-researcher"&gt;3.4 RESEARCHER&lt;/h3&gt;
+&lt;p&gt;Sahil Shah reported this vulnerability to Mitsubishi Electric.&lt;/p&gt;
+&lt;h2 id="4-mitigations"&gt;4. MITIGATIONS&lt;/h2&gt;
+&lt;p&gt;The vulnerability is fixed in the following products and versions. &amp;nbsp;Download and install the fixed version from the Mitsubishi Electric &lt;a href="https://www.mitsubishielectric.com/fa/download/index.html" target="_blank"&gt;download site&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NC Trainer2: "AC" or later&lt;/li&gt;
+&lt;li&gt;NC Trainer2 plus: "AC" or later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that there are no plans to release fixed versions for the following products:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NC Designer&lt;/li&gt;
+&lt;li&gt;NC Analyzer&lt;/li&gt;
+&lt;li&gt;NC Monitor&lt;/li&gt;
+&lt;li&gt;NC Trainer / NC Trainer plus&lt;/li&gt;
+&lt;li&gt;NC Visualizer&lt;/li&gt;
+&lt;li&gt;Remote Monitor Tool&lt;/li&gt;
+&lt;li&gt;MS Configurator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For users of products that do not have a fixed version or who cannot immediately update the product, Mitsubishi Electric recommends taking the following mitigations to minimize the risk of exploiting this vulnerability:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Restrict physical access to the computer using the product.&lt;/li&gt;
+&lt;li&gt;Install an antivirus software in the computer using the affected product.&lt;/li&gt;
+&lt;li&gt;Do not open untrusted files or click untrusted links.&lt;/li&gt;
+&lt;li&gt;Do not run setup-launchers obtained from sources other than our branches, distributors or the Mitsubishi Electric FA website.&lt;/li&gt;
+&lt;li&gt;Before running the setup-launcher, make sure that no DLL exists in the folder containing the setup-launcher executable file (the name varies depending on the product) for the product.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, see Mitsubishi Electric &lt;a href="https://www.mitsubishielectric.com/psirt/vulnerability/pdf/2025-008_en.pdf" target="_blank"&gt;2025-008&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimize network exposure for all control system devices and/or systems, ensuring they are &lt;a href="https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01" target="_blank"&gt;not accessible from the internet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Locate control system networks and remote devices behind firewalls and isolating them from business networks.&lt;/li&gt;
+&lt;li&gt;When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.&lt;/p&gt;
+&lt;p&gt;CISA also provides a section for &lt;a href="https://www.cisa.gov/resources-tools/resources/ics-recommended-practices" target="_blank"&gt;control systems security recommended practices&lt;/a&gt; on the ICS webpage on &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt;. Several CISA products detailing cyber defense best practices are available for reading and download, including &lt;a href="https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf" target="_blank"&gt;Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CISA encourages organizations to implement recommended cybersecurity strategies for &lt;a href="https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf" target="_blank"&gt;proactive defense of ICS assets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt; in the technical information paper, &lt;a href="https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B" target="_blank"&gt;ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.&lt;/p&gt;
+&lt;p&gt;No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability is not exploitable remotely. This vulnerability has a high attack complexity.&lt;/p&gt;
+&lt;h2 id="5-update-history"&gt;5. UPDATE HISTORY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;July 24, 2025: Initial Republication of Mitsubishi Electric 2025-008&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  <pubDate>Tue, 29 Jul 25 14:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/239991</guid>
+    </item>
+<item>
+  <title>Medtronic MyCareLink Patient Monitor</title>
+  <link>https://www.cisa.gov/news-events/ics-medical-advisories/icsma-25-205-01</link>
+  <description>&lt;p&gt;&lt;a href="https://github.com/cisagov/CSAF" target="_blank"&gt;&lt;strong&gt;View CSAF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="1-executive-summary"&gt;1. EXECUTIVE SUMMARY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVSS v4 7.0&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt;: Low attack complexity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vendor&lt;/strong&gt;: Medtronic&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: MyCareLink Patient Monitor 24950, 24952&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vulnerabilities&lt;/strong&gt;: Cleartext Storage of Sensitive Information, Empty Password in Configuration File, Deserialization of Untrusted Data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-risk-evaluation"&gt;2. RISK EVALUATION&lt;/h2&gt;
+&lt;p&gt;Successful exploitation of these vulnerabilities could lead to system compromise, unauthorized access to sensitive data, and manipulation of the monitor's functionality.&lt;/p&gt;
+&lt;h2 id="3-technical-details"&gt;3. TECHNICAL DETAILS&lt;/h2&gt;
+&lt;h3 id="31-affected-products"&gt;3.1 AFFECTED PRODUCTS&lt;/h3&gt;
+&lt;p&gt;The following Medtronic products are affected:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MyCareLink Patient Monitor model 24950: All versions&lt;/li&gt;
+&lt;li&gt;MyCareLink Patient Monitor model 24952: All versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-vulnerability-overview"&gt;3.2 Vulnerability Overview&lt;/h3&gt;
+&lt;h4 id="321-cleartext-storage-of-sensitive-information-cwe-312"&gt;&lt;strong&gt;3.2.1 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/312.html" target="_blank"&gt;&lt;strong&gt;CLEARTEXT STORAGE OF SENSITIVE INFORMATION CWE-312&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Medtronic MyCareLink Patient Monitor uses an unencrypted filesystem on internal storage, which allows an attacker with physical access to read and modify files.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-4394" target="_blank"&gt;CVE-2025-4394&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 6.8 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H" target="_blank"&gt;AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A CVSS v4 score has also been calculated for &lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-4394" target="_blank"&gt;CVE-2025-4394&lt;/a&gt;. A base score of 7.0 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N" target="_blank"&gt;AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="322-empty-password-in-configuration-file-cwe-258"&gt;&lt;strong&gt;3.2.2 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/258.html" target="_blank"&gt;&lt;strong&gt;EMPTY PASSWORD IN CONFIGURATION FILE CWE-258&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Medtronic MyCareLink Patient Monitor has a built-in user account with an empty password, which allows an attacker with physical access to log in with no password and access/modify system functionality.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-4395" target="_blank"&gt;CVE-2025-4395&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 6.8 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H" target="_blank"&gt;AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A CVSS v4 score has also been calculated for &lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-4395" target="_blank"&gt;CVE-2025-4395&lt;/a&gt;. A base score of 7.0 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N" target="_blank"&gt;AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="323-deserialization-of-untrusted-data-cwe-502"&gt;&lt;strong&gt;3.2.3 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/502.html" target="_blank"&gt;&lt;strong&gt;DESERIALIZATION OF UNTRUSTED DATA CWE-502&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Medtronic MyCareLink Patient Monitor has an internal service that deserializes data, which allows a local attacker to interact with the service by crafting a binary payload to crash the service or elevate privileges.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-4393" target="_blank"&gt;CVE-2025-4393&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 6.5 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:H" target="_blank"&gt;AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A CVSS v4 score has also been calculated for &lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-4393" target="_blank"&gt;CVE-2025-4393&lt;/a&gt;. A base score of 5.9 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:L/VI:H/VA:H/SC:N/SI:N/SA:N" target="_blank"&gt;AV:L/AC:H/AT:P/PR:L/UI:N/VC:L/VI:H/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id="33-background"&gt;3.3 BACKGROUND&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL INFRASTRUCTURE SECTORS:&lt;/strong&gt; Healthcare and Public Health&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COUNTRIES/AREAS DEPLOYED:&lt;/strong&gt; Worldwide&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COMPANY HEADQUARTERS LOCATION:&lt;/strong&gt; Ireland&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="34-researcher"&gt;3.4 RESEARCHER&lt;/h3&gt;
+&lt;p&gt;Ethan Morchy from Somerset Recon and Carl Mann, an independent researcher, reported these vulnerabilities to Medtronic.&lt;/p&gt;
+&lt;h2 id="4-mitigations"&gt;4. MITIGATIONS&lt;/h2&gt;
+&lt;p&gt;The identified vulnerabilities were reported as low-risk findings. An attacker would need to physically tamper with the monitor to exploit them. In response, starting in June 2025, Medtronic began deploying security updates to address these findings.&lt;/p&gt;
+&lt;p&gt;Medtronic recommends the following actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The security update process is performed automatically when the monitor is connected to the internet. Users should ensure that their remote monitor is plugged in to receive updates.&lt;/li&gt;
+&lt;li&gt;Physicians should continue to prescribe monitors as intended.&lt;/li&gt;
+&lt;li&gt;Users should maintain possession of their home monitor.&lt;/li&gt;
+&lt;li&gt;Users should only use home monitors provided directly from a healthcare provider or a Medtronic representative.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Users needing additional assistance should contact &lt;a href="mailto:security@medtronic.com"&gt;security@medtronic.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information regarding these vulnerabilities, refer to &lt;a href="https://global.medtronic.com/xg-en/product-security/security-bulletins.html" target="_blank"&gt;Medtronic's security bulletin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Users should follow CISA's guidance in the following areas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.cisa.gov/news-events/news/securing-internet-things-iot" target="_blank"&gt;Securing the Internet of Things&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cisa.gov/news-events/news/home-network-security" target="_blank"&gt;Home Network Security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.&lt;/p&gt;
+&lt;p&gt;CISA also provides a section for &lt;a href="https://www.cisa.gov/resources-tools/resources/ics-recommended-practices" target="_blank"&gt;control systems security recommended practices&lt;/a&gt; on the ICS webpage on &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt;. Several CISA products detailing cyber defense best practices are available for reading and download, including &lt;a href="https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf" target="_blank"&gt;Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CISA encourages organizations to implement recommended cybersecurity strategies for &lt;a href="https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf" target="_blank"&gt;proactive defense of ICS assets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt; in the technical information paper, &lt;a href="https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B" target="_blank"&gt;ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.&lt;/p&gt;
+&lt;p&gt;No known public exploitation specifically targeting these vulnerabilities has been reported to CISA at this time. These vulnerabilities are not exploitable remotely.&lt;/p&gt;
+&lt;h2 id="5-update-history"&gt;5. UPDATE HISTORY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;July 24, 2025: Initial Publication&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  <pubDate>Tue, 29 Jul 25 14:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/239992</guid>
+    </item>
+<item>
+  <title>CISA Releases Six Industrial Control Systems Advisories</title>
+  <link>https://www.cisa.gov/news-events/alerts/2025/07/24/cisa-releases-six-industrial-control-systems-advisories</link>
+  <description>&lt;p&gt;CISA released six Industrial Control Systems (ICS) advisories on July 24, 2025. These advisories provide timely information about current security issues, vulnerabilities, and exploits surrounding ICS.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ICSA-25-205-01 &lt;a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-01"&gt;Mitsubishi Electric CNC Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ICSA-25-205-02 &lt;a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-02"&gt;Network Thermostat X-Series WiFi Thermostats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ICSA-25-205-03 &lt;a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-03"&gt;Honeywell Experion PKS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ICSA-25-205-04 &lt;a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-04"&gt;LG Innotek Camera Model LNV5110R&lt;/a&gt;&lt;br&gt;&amp;nbsp;&lt;/li&gt;
+&lt;li&gt;ICSMA-25-205-01 &lt;a href="https://cisa.gov/news-events/ics-medical-advisories/icsma-25-205-01"&gt;Medtronic MyCareLink Patient Monitor&lt;/a&gt;&lt;br&gt;&amp;nbsp;&lt;/li&gt;
+&lt;li&gt;ICSA-22-202-04 &lt;a href="https://www.cisa.gov/news-events/ics-advisories/icsa-22-202-04"&gt;ICONICS Suite and Mitsubishi Electric MC Works64 Products (Update A)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CISA encourages users and administrators to review newly released ICS advisories for technical details and mitigations.&lt;/p&gt;
+</description>
+  <pubDate>Tue, 29 Jul 25 14:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/239993</guid>
+    </item>
+<item>
+  <title>Honeywell Experion PKS</title>
+  <link>https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-03</link>
+  <description>&lt;p&gt;&lt;a href="https://github.com/cisagov/CSAF" target="_blank"&gt;&lt;strong&gt;View CSAF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="1-executive-summary"&gt;1. EXECUTIVE SUMMARY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVSS v3 9.4&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt;: Exploitable remotely/low attack complexity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vendor&lt;/strong&gt;: Honeywell&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: Experion PKS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vulnerabilities&lt;/strong&gt;: Use of Uninitialized Variable, Improper Restriction of Operations within the Bounds of a Memory Buffer, Sensitive Information in Resource Not Removed Before Reuse, Integer Underflow (Wrap or Wraparound), Deployment of Wrong Handler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-risk-evaluation"&gt;2. RISK EVALUATION&lt;/h2&gt;
+&lt;p&gt;Successful exploitation of these vulnerabilities could result in information exposure, denial of service, or remote code execution.&lt;/p&gt;
+&lt;h2 id="3-technical-details"&gt;3. TECHNICAL DETAILS&lt;/h2&gt;
+&lt;h3 id="31-affected-products"&gt;3.1 AFFECTED PRODUCTS&lt;/h3&gt;
+&lt;p&gt;Honeywell reports these vulnerabilities affect the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Experion PKS: All releases prior to R520.2 TCU9 Hot Fix 1&lt;/li&gt;
+&lt;li&gt;Experion PKS: All releases prior to R530 TCU3 Hot Fix 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-vulnerability-overview"&gt;3.2 Vulnerability Overview&lt;/h3&gt;
+&lt;h4 id="321-use-of-uninitialized-variable-cwe-457"&gt;&lt;strong&gt;3.2.1 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/457.html" target="_blank"&gt;&lt;strong&gt;Use of Uninitialized Variable CWE-457&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The Honeywell Experion PKS contains an uninitialized variable in the common Epic Platform Analyzer (EPA) communications. An attacker could potentially exploit this vulnerability, leading to communication channel manipulation, which results in a dereferencing of an uninitialized pointer leading to a denial of service.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-2520" target="_blank"&gt;CVE-2025-2520&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 7.5 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" target="_blank"&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="322-improper-restriction-of-operations-within-the-bounds-of-a-memory-buffer-cwe-119"&gt;&lt;strong&gt;3.2.2 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/119.html" target="_blank"&gt;&lt;strong&gt;Improper Restriction of Operations within the Bounds of a Memory Buffer CWE-119&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The Honeywell Experion PKS contains a memory buffer vulnerability in the component Control Data Access (CDA). An attacker could potentially exploit this vulnerability, leading to overread buffers, which could result in improper index validation against buffer borders, leading to remote code execution.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-2521" target="_blank"&gt;CVE-2025-2521&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 8.6 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H" target="_blank"&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="323-sensitive-information-in-resource-not-removed-before-reuse-cwe-226"&gt;&lt;strong&gt;3.2.3 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/226.html" target="_blank"&gt;&lt;strong&gt;Sensitive Information in Resource Not Removed Before Reuse CWE-226&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The Honeywell Experion PKS contains sensitive information in resource vulnerability in the component Control Data Access (CDA). An attacker could potentially exploit this vulnerability, leading to communication channel manipulation, which could result in buffer reuse, which may cause incorrect system behavior.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-2522" target="_blank"&gt;CVE-2025-2522&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 6.5 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N" target="_blank"&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="324-integer-underflow-wrap-or-wraparound-cwe-191"&gt;&lt;strong&gt;3.2.4 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/191.html" target="_blank"&gt;&lt;strong&gt;Integer Underflow (Wrap or Wraparound) CWE-191&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The Honeywell Experion PKS contains an integer underflow vulnerability in the component Control Data Access (CDA). An attacker could potentially exploit this vulnerability, leading to communication channel manipulation, which could result in a failure during subtraction, allowing remote code execution.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-2523" target="_blank"&gt;CVE-2025-2523&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 9.4 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H" target="_blank"&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="325-deployment-of-wrong-handler-cwe-430"&gt;&lt;strong&gt;3.2.5 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/430.html" target="_blank"&gt;&lt;strong&gt;Deployment of Wrong Handler CWE-430&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The Honeywell Experion PKS contains a deployment of wrong handler vulnerability in the component Control Data Access (CDA). An attacker could potentially exploit this vulnerability, leading to input data manipulation, which could result in incorrect handling of packets, leading to remote code execution.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-3946" target="_blank"&gt;CVE-2025-3946&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 8.2 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H" target="_blank"&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;h4 id="326-integer-underflow-wrap-or-wraparound-cwe-191"&gt;&lt;strong&gt;3.2.6 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/191.html" target="_blank"&gt;&lt;strong&gt;Integer Underflow (Wrap or Wraparound) CWE-191&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The Honeywell Experion PKS contains an integer underflow vulnerability in the component Control Data Access (CDA). An attacker could potentially exploit this vulnerability, leading to input data manipulation, which could result in improper integer data value checking during subtraction, leading to a denial of service.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-3947" target="_blank"&gt;CVE-2025-3947&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 8.2 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H" target="_blank"&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id="33-background"&gt;3.3 BACKGROUND&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL INFRASTRUCTURE SECTORS:&lt;/strong&gt; Chemical, Critical Manufacturing, Energy, Healthcare and Public Health, Water and Wastewater Systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COUNTRIES/AREAS DEPLOYED:&lt;/strong&gt; Worldwide&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COMPANY HEADQUARTERS LOCATION:&lt;/strong&gt; United States&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="34-researcher"&gt;3.4 RESEARCHER&lt;/h3&gt;
+&lt;p&gt;Positive Technologies reported these vulnerabilities to Honeywell.&lt;/p&gt;
+&lt;h2 id="4-mitigations"&gt;4. MITIGATIONS&lt;/h2&gt;
+&lt;p&gt;Honeywell recommends updating Experion PKS R520.2 TCU9 Hot Fix 1 or R530 TCU3 Hot Fix 1. For more information, see the &lt;a href="https://process.honeywell.com/us/en/support/technical-publication?search=SN2025" target="_blank"&gt;Security Notice.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure the least-privilege user principle is followed.&lt;/li&gt;
+&lt;li&gt;Minimize network exposure for all control system devices and/or systems, ensuring they are &lt;a href="https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01" target="_blank"&gt;not accessible from the Internet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Locate control system networks and remote devices behind firewalls and isolating them from business networks.&lt;/li&gt;
+&lt;li&gt;When remote access is required, use more secure methods, such as virtual private networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.&lt;/p&gt;
+&lt;p&gt;CISA also provides a section for &lt;a href="https://www.cisa.gov/resources-tools/resources/ics-recommended-practices" target="_blank"&gt;control systems security recommended practices&lt;/a&gt; on the ICS webpage on &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt;. Several CISA products detailing cyber defense best practices are available for reading and download, including &lt;a href="https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf" target="_blank"&gt;Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CISA encourages organizations to implement recommended cybersecurity strategies for &lt;a href="https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf" target="_blank"&gt;proactive defense of ICS assets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt; in the technical information paper, &lt;a href="https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B" target="_blank"&gt;ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.&lt;/p&gt;
+&lt;p&gt;No known public exploitation specifically targeting these vulnerabilities has been reported to CISA at this time.&lt;/p&gt;
+&lt;h2 id="5-update-history"&gt;5. UPDATE HISTORY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;July 24, 2025: Initial Republication of Honeywell security notice.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  <pubDate>Tue, 29 Jul 25 14:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/239994</guid>
+    </item>
+<item>
+  <title>Network Thermostat X-Series WiFi Thermostats</title>
+  <link>https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-02</link>
+  <description>&lt;p&gt;&lt;a href="https://github.com/cisagov/CSAF" target="_blank"&gt;&lt;strong&gt;View CSAF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="1-executive-summary"&gt;1. EXECUTIVE SUMMARY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVSS v4 9.3&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ATTENTION&lt;/strong&gt;: Exploitable remotely/low attack complexity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vendor&lt;/strong&gt;: Network Thermostat&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment&lt;/strong&gt;: X-Series WiFi thermostats&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vulnerability&lt;/strong&gt;: Missing Authentication for Critical Function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-risk-evaluation"&gt;2. RISK EVALUATION&lt;/h2&gt;
+&lt;p&gt;Successful exploitation of this vulnerability could allow an attacker to gain full administrative access to the device.&lt;/p&gt;
+&lt;h2 id="3-technical-details"&gt;3. TECHNICAL DETAILS&lt;/h2&gt;
+&lt;h3 id="31-affected-products"&gt;3.1 AFFECTED PRODUCTS&lt;/h3&gt;
+&lt;p&gt;The following Network Thermostat product is affected:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;X-Series WiFi thermostats: Versions v4.5 up to but not including v4.6&lt;/li&gt;
+&lt;li&gt;X-Series WiFi thermostats: Versions v9.6 up to but not including v9.46&lt;/li&gt;
+&lt;li&gt;X-Series WiFi thermostats: Versions v10.1 up to but not including v10.29&lt;/li&gt;
+&lt;li&gt;X-Series WiFi thermostats: Versions v11.1 up to but not including v11.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-vulnerability-overview"&gt;3.2 Vulnerability Overview&lt;/h3&gt;
+&lt;h4 id="321-missing-authentication-for-critical-function-cwe-306"&gt;&lt;strong&gt;3.2.1 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/306.html" target="_blank"&gt;&lt;strong&gt;Missing Authentication for Critical Function CWE-306&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The embedded web server on the thermostat listed version ranges contain a vulnerability that allows unauthenticated attackers, either on the Local Area Network or from the Internet via a router with port forwarding set up, to gain direct access to the thermostat's embedded web server and reset user credentials by manipulating specific elements of the embedded web interface.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-6260" target="_blank"&gt;CVE-2025-6260&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3.1 base score of 9.8 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H" target="_blank"&gt;AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A CVSS v4 score has also been calculated for &lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-6260" target="_blank"&gt;CVE-2025-6260&lt;/a&gt;. A base score of 9.3 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N" target="_blank"&gt;AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id="33-background"&gt;3.3 BACKGROUND&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL INFRASTRUCTURE SECTORS:&lt;/strong&gt; Commercial Facilities&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COUNTRIES/AREAS DEPLOYED:&lt;/strong&gt; USA, Canada&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COMPANY HEADQUARTERS LOCATION:&lt;/strong&gt; United States&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="34-researcher"&gt;3.4 RESEARCHER&lt;/h3&gt;
+&lt;p&gt;Souvik Kandar reported this vulnerability to CISA.&lt;/p&gt;
+&lt;h2 id="4-mitigations"&gt;4. MITIGATIONS&lt;/h2&gt;
+&lt;p&gt;Network Thermostat recommends users to update to the following (or newer) versions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;X-Series WiFi thermostats with v4.x to a minimum of v4.6&lt;/li&gt;
+&lt;li&gt;X-Series WiFi thermostats with v9.x to a minimum of v9.46&lt;/li&gt;
+&lt;li&gt;X-Series WiFi thermostats with v10.x to a minimum of v10.29&lt;/li&gt;
+&lt;li&gt;X-Series WiFi thermostats with v11.x to a minimum of v11.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This update was applied automatically to reachable units, requiring no action from end users.&lt;/p&gt;
+&lt;p&gt;If end users would like their units behind firewalls to be updated, contact Network Thermostat at &lt;a href="mailto:support@networkthermostat.com"&gt;support@networkthermostat.com&lt;/a&gt; to coordinate an update.&lt;/p&gt;
+&lt;p&gt;CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimize network exposure for all control system devices and/or systems, ensuring they are &lt;a href="https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01" target="_blank"&gt;not accessible from the internet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Locate control system networks and remote devices behind firewalls and isolating them from business networks.&lt;/li&gt;
+&lt;li&gt;When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.&lt;/p&gt;
+&lt;p&gt;CISA also provides a section for &lt;a href="https://www.cisa.gov/resources-tools/resources/ics-recommended-practices" target="_blank"&gt;control systems security recommended practices&lt;/a&gt; on the ICS webpage on &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt;. Several CISA products detailing cyber defense best practices are available for reading and download, including &lt;a href="https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf" target="_blank"&gt;Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CISA encourages organizations to implement recommended cybersecurity strategies for &lt;a href="https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf" target="_blank"&gt;proactive defense of ICS assets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt; in the technical information paper, &lt;a href="https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B" target="_blank"&gt;ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.&lt;/p&gt;
+&lt;p&gt;No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time.&lt;/p&gt;
+&lt;h2 id="5-update-history"&gt;5. UPDATE HISTORY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;July 24, 2025: Initial Publication&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  <pubDate>Tue, 29 Jul 25 14:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/239995</guid>
+    </item>
+<item>
+  <title>LG Innotek Camera Model LNV5110R</title>
+  <link>https://www.cisa.gov/news-events/ics-advisories/icsa-25-205-04</link>
+  <description>&lt;p&gt;&lt;a href="https://github.com/cisagov/CSAF" target="_blank"&gt;&lt;strong&gt;View CSAF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="1-executive-summary"&gt;1. EXECUTIVE SUMMARY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CVSS v4 8.3&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ATTENTION:&lt;/strong&gt; Exploitable remotely&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vendor:&lt;/strong&gt; LG Innotek&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment:&lt;/strong&gt; Camera Model LNV5110R&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vulnerability:&lt;/strong&gt; Authentication Bypass Using an Alternate Path or Channel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-risk-evaluation"&gt;2. RISK EVALUATION&lt;/h2&gt;
+&lt;p&gt;Successful exploitation of this vulnerability could allow an attacker to gain administrative access to the device.&lt;/p&gt;
+&lt;h2 id="3-technical-details"&gt;3. TECHNICAL DETAILS&lt;/h2&gt;
+&lt;h3 id="31-affected-products"&gt;3.1 AFFECTED PRODUCTS&lt;/h3&gt;
+&lt;p&gt;The following model of LG Innotek CCTV Camera is affected:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LNV5110R: All versions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-vulnerability-overview"&gt;3.2 Vulnerability Overview&lt;/h3&gt;
+&lt;h4 id="321-authentication-bypass-using-an-alternate-path-or-channel-cwe-288"&gt;&lt;strong&gt;3.2.1 &lt;/strong&gt;&lt;a href="https://cwe.mitre.org/data/definitions/288.html" target="_blank"&gt;&lt;strong&gt;AUTHENTICATION BYPASS USING AN ALTERNATE PATH OR CHANNEL CWE-288&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;An authentication vulnerability exists in the LG Innotek camera model LNV5110R firmware that allows a malicious actor to upload an HTTP POST request to the devices non-volatile storage. This action may result in remote code execution that allows an attacker to run arbitrary commands on the target device at the administrator privilege level.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-7742" target="_blank"&gt;CVE-2025-7742&lt;/a&gt; has been assigned to this vulnerability. A CVSS v3 base score of 7.0 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L" target="_blank"&gt;AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A CVSS v4 score has also been calculated for &lt;a href="https://www.cve.org/CVERecord?id=CVE-2025-7742" target="_blank"&gt;CVE-2025-7742&lt;/a&gt;. A base score of 8.3 has been calculated; the CVSS vector string is (&lt;a href="https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N" target="_blank"&gt;AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id="33-background"&gt;3.3 BACKGROUND&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL INFRASTRUCTURE SECTORS:&lt;/strong&gt; Commercial Facilities&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COUNTRIES/AREAS DEPLOYED:&lt;/strong&gt; Worldwide&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;COMPANY HEADQUARTERS LOCATION:&lt;/strong&gt; South Korea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="34-researcher"&gt;3.4 RESEARCHER&lt;/h3&gt;
+&lt;p&gt;Souvik Kandar reported this vulnerability to CISA.&lt;/p&gt;
+&lt;h2 id="4-mitigations"&gt;4. MITIGATIONS&lt;/h2&gt;
+&lt;p&gt;LG Innotek is aware of the vulnerability but has noted this is an end-of-life product that can no longer be patched.&lt;/p&gt;
+&lt;p&gt;Please visit the &lt;a href="https://lgsecurity.lge.com/" target="_blank"&gt;LG Security Center&lt;/a&gt; for further guidance.&lt;/p&gt;
+&lt;p&gt;CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimize network exposure for all control system devices and/or systems, ensuring they are &lt;a href="https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01" target="_blank"&gt;not accessible from the Internet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Locate control system networks and remote devices behind firewalls and isolating them from business networks.&lt;/li&gt;
+&lt;li&gt;When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.&lt;/p&gt;
+&lt;p&gt;CISA also provides a section for &lt;a href="https://www.cisa.gov/resources-tools/resources/ics-recommended-practices" target="_blank"&gt;control systems security recommended practices&lt;/a&gt; on the ICS webpage on &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt;. Several CISA products detailing cyber defense best practices are available for reading and download, including &lt;a href="https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf" target="_blank"&gt;Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;CISA encourages organizations to implement recommended cybersecurity strategies for &lt;a href="https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf" target="_blank"&gt;proactive defense of ICS assets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at &lt;a href="https://www.cisa.gov/topics/industrial-control-systems" target="_blank"&gt;cisa.gov/ics&lt;/a&gt; in the technical information paper, &lt;a href="https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B" target="_blank"&gt;ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.&lt;/p&gt;
+&lt;p&gt;No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time. This vulnerability has a high attack complexity.&lt;/p&gt;
+&lt;h2 id="5-update-history"&gt;5. UPDATE HISTORY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;July 24, 2025: Initial Publication&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+  <pubDate>Tue, 29 Jul 25 14:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/239996</guid>
+    </item>
+<item>
+
+
 <item>
   <title>CISA Adds Another One Known Exploited Vulnerability to Catalog</title>
   <link>https://www.cisa.gov/news-events/alerts/2025/07/18/cisa-adds-one-known-exploited-vulnerability-catalog</link>
