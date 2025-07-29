@@ -5,8 +5,19 @@
     <link>https://www.cisa.gov/</link>
     <description/>
     <language>en</language>
+
+<item>
+  <title>CISA Adds One Known Exploited Vulnerability to Catalog</title>
+  <link>https://example.com/news/fake-advisory-2025-07-29</link>
+  <description> &lt;li&gt;&lt;a class="fui-Link ___1q1shib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" title="Known Exploited Vulnerabilities (KEV) Catalog" rel="noreferrer noopener"><u>Known Exploited Vulnerabilitiesib f2hkw1w f3rmtva f1ewtqcl fyind8e f1k6fduh f1w7gpdv fk6fouc fjoy568 figsok6 f1s184ao f1mk8lai fnbmjn9 f1o700av f13mvf36 f1cmlufx f9n3di6 f1ids18y f1tx3yz7 f1deo86v f1eh06m1 f1iescvh fhgqx19 f1olyrje f1p93eir f1nev41a f1h8hb77 f1lqvz6u f10aw75t fsle3fq f17ae5zn" href="https://www.cve.org/CVERecord?id=CVE-2025-99999" target="_blank" title="CVE-2025-99999" rel="noreferrer noopener"&gt;CVE-2025-20281&lt;/a&gt; CISA RSS 1 test&lt;/li&gt;  </div>
+</description>
+  <pubDate>Tue, 29 Jul 25 13:00:00 +0000</pubDate>
+    <dc:creator>CISA</dc:creator>
+    <guid isPermaLink="false">/node/23687</guid>
+    </item>
     
-    <item>
+
+<item>
   <title>CISA and Partners Release Updated Advisory on Scattered Spider Group</title>
   <link>https://www.cisa.gov/news-events/alerts/2025/07/29/cisa-and-partners-release-updated-advisory-scattered-spider-group</link>
   <description>&lt;p&gt;CISA, along with the Federal Bureau of Investigation, Canadian Centre for Cyber Security, Royal Canadian Mounted Police, the Australian Cyber Security Centre’s Australian Signals Directorate, and the Australian Federal Police and National Cyber Security Centre, released an updated joint Cybersecurity Advisory on Scattered Spider—a cybercriminal group targeting commercial facilities sectors and subsectors. This advisory provides updated tactics, techniques, and procedures (TTPs) obtained through FBI investigations conducted through June 2025.&lt;/p&gt;
